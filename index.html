@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Smart Restaurant</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header><h1>Smart Restaurant</h1></header>
+
+    <main>
+      <section class="menu-section">
+        <h2>Menu</h2>
+        <div id="menu" class="menu-grid"></div>
+      </section>
+
+      <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart"></div>
+        <div class="cart-actions">
+          <input id="name" placeholder="Your name" />
+          <input id="phone" placeholder="Phone" />
+          <button id="checkout">Place Order</button>
+        </div>
+        <div id="orderResult"></div>
+      </section>
+
+      <section class="live-section">
+        <h2>Live Order</h2>
+        <input id="orderIdInput" placeholder="Order ID to track" />
+        <button id="trackBtn">Track</button>
+        <div id="events"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

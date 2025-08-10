@@ -1,0 +1,21 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { margin: 0; background: linear-gradient(180deg,#f7f7f9,#fff); color: #222; }
+.app { max-width: 1100px; margin: 20px auto; padding: 18px; background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+header { text-align: center; margin-bottom: 20px; }
+main { display: grid; grid-template-columns: 1fr 320px; gap: 18px; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); gap: 12px; }
+.card { background: linear-gradient(180deg,#fff,#fafafa); padding: 12px; border-radius: 10px; border: 1px solid #eee; transition: transform .15s ease, box-shadow .15s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0,0,0,0.06); }
+.card h3 { margin: 0 0 6px; font-size: 16px; }
+.card p { margin: 0 0 10px; color: #555; font-size: 13px; }
+.card .price { font-weight: 700; }
+.btn { background: #ff6b6b; color: white; border: none; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+.cart-section { border-left: 1px dashed #eee; padding-left: 18px; }
+.cart-item { display:flex; justify-content: space-between; gap: 8px; padding: 6px 0; border-bottom: 1px solid #f2f2f2; }
+.cart-actions { margin-top: 12px; display:flex; gap:8px; flex-direction: column; }
+input { padding: 8px; border-radius: 6px; border: 1px solid #ddd; }
+#events { margin-top: 10px; padding: 8px; background: #fafafa; border-radius: 8px; min-height:40px; }
+@media (max-width: 900px) {
+  main { grid-template-columns: 1fr; }
+  .cart-section { border-left: none; padding-left: 0; margin-top: 16px; }
+}
